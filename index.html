@@ -1,40 +1,48 @@
-<style>
-    div{
-        background-color: red;
-        width: 100px;
-        height: 100px;
-        animation-name: colorchange;
-        animation-duration: 4s;
-    }
-
-    @keyframes colorchange {
-        0%{
-            margin-left: 0px;
-            margin-top: 0px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: colorchange;
+            animation-duration: 4s;
         }
-        25%{
-            margin-left: 0px;
-            margin-top: 100px;
+    
+        @keyframes colorchange {
+            0%{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            25%{
+                margin-left: 0px;
+                margin-top: 100px;
+            }
+            50%{
+                margin-top: 100px;
+                margin-left: 100px;
+            }
+            75%{
+                margin-top: 0px;
+                margin-left: 100px;
+            }
+            100%{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
         }
-        50%{
-            margin-top: 100px;
-            margin-left: 100px;
-        }
-        75%{
-            margin-top: 0px;
-            margin-left: 100px;
-        }
-        100%{
-            margin-left: 0px;
-            margin-top: 0px;
-        }
-    }
-        
-</style>
-
-
-
-
-<div>
-
-</div>
+            
+    </style>
+    <div class="container">
+    
+    </div>
+    
+    
+</body>
+</html>
